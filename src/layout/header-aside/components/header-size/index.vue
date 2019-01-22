@@ -34,7 +34,6 @@ export default {
     // 因为需要访问 this.$ELEMENT 所以只能在这里使用这种方式
     value: {
       handler (val, oldVal) {
-        // https://github.com/d2-projects/d2-admin/pull/129
         if (oldVal) {
           // 这个情况在已经加载完页面 用户改变了尺寸时触发
           this.$ELEMENT.size = val
